@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var i = 1;
+            $("#bu").click(function() {
+                var y = i++;
+                if (y == 10) {
+                    $("#bu ").prop('disabled', true)
+
+                }
+                $("#re").text(y);
+            })
+        })
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="bu">
+        submit
+    </button>
+    <p id="re"></p>
+</body>
+
+</html
